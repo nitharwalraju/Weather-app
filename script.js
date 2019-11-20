@@ -44,29 +44,29 @@ function searchByGeo(lat, lon) {
 function init(resultFromServer) {
     switch (resultFromServer.weather[0].main) {
         case 'Clear':
-            document.body.style.backgroundImage = "url('clearPicture.jpg')";
+            document.body.style.backgroundImage = "url('img/clearPicture.jpg')";
             break;
         
         case 'Clouds':
-            document.body.style.backgroundImage = "url('cloudyPicture.jpg')";
+            document.body.style.backgroundImage = "url('img/cloudyPicture.jpg')";
             break;
 
         case 'Rain':
         case 'Drizzle':
-            document.body.style.backgroundImage = "url('rainPicture.jpg')";
+            document.body.style.backgroundImage = "url('img/rainPicture.jpg')";
             break;
 
         case 'Mist':
         case 'Haze':
-            document.body.style.backgroundImage = "url('mistPicture.jpg')";
+            document.body.style.backgroundImage = "url('img/mistPicture.jpg')";
             break;    
         
         case 'Thunderstorm':
-            document.body.style.backgroundImage = "url('stormPicture.jpg')";
+            document.body.style.backgroundImage = "url('img/stormPicture.jpg')";
             break;
         
         case 'Snow':
-            document.body.style.backgroundImage = "url('snowPicture.jpg')";
+            document.body.style.backgroundImage = "url('img/snowPicture.jpg')";
             break;
 
         default:
